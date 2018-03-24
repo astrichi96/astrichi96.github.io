@@ -15,6 +15,13 @@ a:hover {
   color: #fec503;
 }
 
+.breadcrumb {
+  background-color: #000;
+  opacity: 0.5;
+  transition-property: all;
+  transition-duration: 10s;
+  transition-timing-function: ease;
+}
 .text-primary {
   color: #fed136 !important;
 }
@@ -167,7 +174,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/unicartagena.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
