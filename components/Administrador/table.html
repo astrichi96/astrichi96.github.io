@@ -5,8 +5,9 @@
 	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Manejo Administrativo</title>
-
+	<title>Administración de perfil</title>
+    <link rel = "icon" type="image/jpg" href="../../img/logos/unicartagena.ico">
+    
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
@@ -20,8 +21,6 @@
 
     <!--  Light Bootstrap Table core CSS    -->
     <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
  
 
 
@@ -94,7 +93,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Publicaciones</a>
+                    <a class="navbar-brand" href="#">Publicaciones del Docente</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">
@@ -125,16 +124,22 @@
                         <div class="card">
                             <div class="header">
                                 <h4 class="title">Producción Bibliografica</h4>
-                                <p class="category">Articulos publicados</p>
+                                <p class="category">Articulos publicados</p><br>
+                                <button class="btn btn-primary btn-fill" data-toggle="modal" data-target="#add">Agregar nueva
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                 </button>
                             </div>
                             <div class="content table-responsive table-full-width">
                                 <table class="table table-hover">
+                                    
                                     <thead>
                                         <th>Año</th>
                                     	<th>Nombre</th>
                                     	<th>Revista</th>
                                     	<th>Ciudad</th>
-                                    	<th>Autores</th>
+                                        <th>Autores</th>
+                                        <th></th>
+                                    	<th></th>
                                     </thead>
                                     <tbody>
                                         <tr>
@@ -142,42 +147,102 @@
                                         	<td>Publicacion #1</td>
                                         	<td>Indian Journal Of Science And Technology</td>
                                         	<td>India</td>
-                                        	<td>Autor 1, Autor 2, Autor 3</td>
+                                            <td>Autor 1, Autor 2, Autor 3</td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm btn-fill" data-toggle="modal" data-target="#edit">
+                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                 </button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm btn-fill">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
                                         </tr>
                                         <tr>
                                         	<td>2015</td>
                                         	<td>Publicacion #2</td>
                                         	<td>Ciencias E Ingeniería Al Día</td>
                                         	<td>Colombia</td>
-                                        	<td>Autor 1, Autor 2, Autor 3</td>
+                                            <td>Autor 1, Autor 2, Autor 3</td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm btn-fill" data-toggle="modal" data-target="#edit">
+                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm btn-fill">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
                                         </tr>
                                         <tr>
                                         	<td>2016</td>
                                         	<td>Publicacion #3</td>
                                         	<td>Indian Journal Of Science And Technology</td>
                                         	<td>India</td>
-                                        	<td>Autor 1, Autor 2, Autor 3</td>
+                                            <td>Autor 1, Autor 2, Autor 3</td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm btn-fill" data-toggle="modal" data-target="#edit">
+                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm btn-fill">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
                                         </tr>
                                         <tr>
                                         	<td>2014</td>
                                         	<td>Publicacion #4</td>
                                         	<td>Información Tecnológica</td>
                                         	<td>Chile</td>
-                                        	<td>Autor 1, Autor 2, Autor 3</td>
+                                            <td>Autor 1, Autor 2, Autor 3</td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm btn-fill" data-toggle="modal" data-target="#edit">
+                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm btn-fill">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
                                         </tr>
                                         <tr>
                                         	<td>2017</td>
                                         	<td>Publicacion #1</td>
                                         	<td>Indian Journal Of Science And Technology</td>
                                         	<td>India</td>
-                                        	<td>Autor 1, Autor 2, Autor 3</td>
+                                            <td>Autor 1, Autor 2, Autor 3</td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm btn-fill" data-toggle="modal" data-target="#edit">
+                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm btn-fill">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
                                         </tr>
                                         <tr>
                                         	<td>2017</td>
                                         	<td>Publicacion #1</td>
                                         	<td>Indian Journal Of Science And Technology</td>
                                         	<td>India</td>
-                                        	<td>Autor 1, Autor 2, Autor 3</td>
+                                            <td>Autor 1, Autor 2, Autor 3</td>
+                                            <td>
+                                                <button class="btn btn-primary btn-fill btn-sm" data-toggle="modal" data-target="#edit">
+                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-primary btn-fill btn-sm">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -199,6 +264,101 @@
         </footer>
 
 
+    </div>
+</div>
+
+<!-- Modal de agregar -->
+<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="addTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title font-weight-bold  text-center" id="exampleModalLongTitle">Agregar nueva publicación</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 col-form-label text-muted small">Año de Publicacion</label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Nombre de la publicación">
+                        </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 col-form-label text-muted small">Nombre</label>
+                    <div class="col-sm-9">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Nombre de la publicación">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 col-form-label text-muted small">Nombre de la revista</label>
+                    <div class="col-sm-9">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Revista donde se publicó">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 col-form-label text-muted small">País</label>
+                    <div class="col-sm-9">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="País donde se publicó">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 col-form-label text-muted small">Autores</label>
+                    <div class="col-sm-9">
+                        <textarea type="text" class="form-control" id="inputPassword" placeholder="Autores participantes"></textarea>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary btn-fill">Agregar publicación</button>
+            </div>
+          </div>
+    </div>
+</div>
+
+      <!-- Modal de editar -->
+<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="addTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="exampleModalLongTitle">Editar publicación</h5>
+            </div>
+            <div class="modal-body">
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 col-form-label text-muted small">Año de Publicacion</label>
+                    <div class="col-sm-9">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Nombre de la publicación">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 col-form-label text-muted small">Nombre</label>
+                    <div class="col-sm-9">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Nombre de la publicación">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 col-form-label text-muted small">Nombre de la revista</label>
+                    <div class="col-sm-9">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Revista donde se publicó">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 col-form-label text-muted small">País</label>
+                    <div class="col-sm-9">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="País donde se publicó">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 col-form-label text-muted small">Autores</label>
+                    <div class="col-sm-9">
+                        <textarea type="text" class="form-control" id="inputPassword" placeholder="Autores participantes"></textarea>
+                    </div>
+                </div>   
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Editar publicación</button>
+            </div>
+        </div>
     </div>
 </div>
 
