@@ -41,11 +41,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text ml-auto">
+            
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Inicio</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Noticias</a>
+              <a class="nav-link js-scroll-trigger" href="#noticias">Noticias</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" data-hover="dropdown"> Rol Academico</a>
@@ -58,10 +59,10 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Direccionamiento Estratégico</a>
+              <a class="nav-link js-scroll-trigger" href="#team">Personal</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Personal</a>
+              <a class="nav-link js-scroll-trigger" href="components/investigacion/index.html">Investigación</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Solicitudes</a>
@@ -115,7 +116,43 @@
       </div>
     </header>
 
-    <!-- Grupos de investigacion -->
+       <!-- About -->
+   <section  id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Direccionamiento Estratégico</h2>
+          <h3 class="section-subheading text-muted">Sobre la Universidad.</h3>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <img class="img-fluid" src="img/about/2.png" 
+                  onmouseover="this.src='img/about/2-1.png'"
+                  onmouseout="this.src='img/about/2.png'" alt="">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <img class="img-fluid" src="img/about/3.png" 
+                  onmouseover="this.src='img/about/3-1.png'"
+                  onmouseout="this.src='img/about/3.png'" alt="">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              
+              <img class="img-fluid" src="img/about/4.png"
+                  onmouseover="this.src='img/about/4-1.png'"
+                  onmouseout="this.src='img/about/4.png'" alt="">
+            </a>
+          </div>
+        </div>
+    </div>
+  </section>
+
+    <!-- Grupos de investigacion 
     
     <section id="services">
       <div class="container">
@@ -266,10 +303,11 @@
         </div>
       </div>
     </section>
+    -->
 
     <!-- Noticias -->
     
-    <section class="bg-light" id="portfolio">
+    <section class="bg-light" id="noticias">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -278,7 +316,7 @@
         </div>
 
         <div class="row my-4" >
-            <div class="col-lg-8">
+            <div class="col-lg-12">
                 <div id="carouselIndicators" class="carousel slide " data-ride="carousel" >
                   <ol class="carousel-indicators">
                     <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -319,17 +357,17 @@
                     </a>
                 </div>
             </div>
-              <!-- /.col-lg-8 -->
-              <div class="col-lg-4 text-center">
-                <br><br><br>
-                <h3 class="text-primary text-center text-muted"><em>En cartelera</em></h3>
-                <br>
-                <p class="text-muted">Enterate de las actividades que se realizan junto con los docentes y estudiantes que participan haciendo la diferencia!</p>
-                <a class="btn btn-primary btn-lg text-center" href="#">¡Ver mas noticias!</a>
-              </div>
-              <!-- /.col-md-4 -->
+         </div>
+         <div class="row">
+           <!-- /.col-lg-8 -->
+           <div class="col-lg-12 text-center">
+              <br>
+              <p class="text-muted">Enterate de las actividades que se realizan junto con los docentes y estudiantes que participan haciendo la diferencia!</p>
+              <a class="btn btn-primary btn-lg text-center" href="#">¡Ver mas noticias!</a>
             </div>
-        </div>
+            <!-- /.col-md-4 -->
+          </div>
+         </div>
     </section>
     
 
@@ -378,52 +416,8 @@
           </div>
      -->
 
-    <!-- About -->
-   <section  id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Direccionamiento Estratégico</h2>
-            <h3 class="section-subheading text-muted">Sobre la Universidad.</h3>
-          </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 portfolio-item">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fa fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/about/2.png" alt="">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fa fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/about/3.png" alt="">
-              </a>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fa fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/about/4.png" alt="">
-              </a>
-            </div>
-          </div>
-      </div>
-    </section>
-
-    <!-- Team -->
-    <section class="bg-light" id="team">
+     <!-- Team -->
+    <section  id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
